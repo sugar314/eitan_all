@@ -1,0 +1,62 @@
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>英単語カード</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>	
+    
+
+     <!-- モーダル部分 -->
+  <div class="unit-modal-wrapper" id='signup-modal'>
+    <div class="modal">
+      <div>
+        <i class="fa fa-2x fa-times" id='close-modal'></i>
+      </div>
+      <div id="signup-form">
+        <h2>Unit番号を登録してください</h2>
+        <form action="#">
+          <input class="form-control" id="min" type="number" placeholder="Unitの始まり">
+          <input class="form-control" id="max"    type="number" placeholder="Unitの終わり">
+          <div id="re">決定</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- モーダルここまで -->
+
+    
+
+	<div class="title-top">
+        <h1></h1>	
+ <!---      <input type="number" id="min" value="1" class="unit"> 
+        <input type="number" id="max" value="122" class="unit"> -->
+        <h2 id="mode" class="en-to-ja">英語→日本語</h2>
+	<div id="card">
+		<div id="card-front"></div>
+		<div id="card-back"></div>
+	</div>
+    <div id="btn">NEXT</div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="fitty.min.js"></script>
+    
+    <script>
+        
+  //  fitty('#card', {
+	//    minSize: 20,
+    //    maxSize: 30,
+    //    multiLine: true 
+    //});
+  //  fitty('#card-front', {
+	//    minSize: 5,
+	//    maxSize: 5
+    //});
+
+    </script>
+</body>
+</html>
