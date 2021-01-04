@@ -1,0 +1,164 @@
+	h1 {
+        margin-left: 200px;
+		color:5f5d60;
+		text-align: center;
+        font-family: Verdana, sans-serif;
+        display: inline-block;
+    }
+
+	body {
+        margin:20px auto ;
+        width: 1000px;
+		background: #e6ecf0;
+		text-align: center;
+		font-family: Verdana, sans-serif;
+		color: #fff;
+	}
+	#btn {
+		width: 200px;
+		margin: 0 auto;
+		padding: 7px;
+		border-radius: 5px;
+		background:#3cb371;
+		box-shadow: 0 4px 0 #006400;
+		cursor: pointer;
+	}
+	#btn:hover {
+		opacity: 0.8;
+    }
+    
+    #mode {
+        font-size: 15px;
+		width: 100px;
+        margin-right:100px;
+        margin-top: 23px;
+		padding: 10px 10px;
+		border-radius: 5px;
+		background:#ff995e;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        float: right;
+        
+	}
+	#mode:hover {
+		opacity: 0.8;
+	}
+
+	#card {
+		margin: 0px auto 20px;
+		width: 800px;
+        height: 120px;
+		cursor: pointer;
+		font-size: 30px;
+		line-height: 120px;
+		perspective: 100px;
+        transition: transform .8s;
+        transform-style: preserve-3d;
+	}
+	#card-front, #card-back {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 5px;
+		position: absolute;
+		-webkit-backface-visibility: hidden;
+		perspective: 1000;
+	}
+	#card-front {
+		background: #fff;
+		color: #333;
+	}
+	#card-back {
+        background: #3cb371;
+		transform: rotateY(180deg);
+	}
+	.open {
+		transform: rotateY(180deg);
+	}
+
+	html,body { height:100%; }
+	
+	#visual { height:100%; }
+
+    p ,.test {
+        margin: 0 auto;
+        color:black;
+    }
+    
+    .unit {
+        margin: 0 20px;
+        padding: 10px 0;
+        box-sizing: border-box;
+        position: center;
+        border: 2px solid #ff995e;
+        z-index: 10;
+        outline: 0;
+        text-align: center;
+    }
+
+    /*モーダル*/
+    .unit-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+
+  }
+  
+  .modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+  
+  .fa-times {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+  }
+  
+  #signup-form {
+    width: 100%;
+  }
+  
+  #signup-form h2 {
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  
+  #signup-form input {
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+  }
+  
+  .unit{
+      display: none;
+  }
+
+  #re {
+    display: inline-block;
+    padding: 14px 140px;
+    background-color: #5dca88;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
